@@ -28,3 +28,6 @@ A table of what to run is provided below:
 |---|---|---|---|
 |Simulation|`python robot.py`|`python robot.py`|`python robot.py`|
 |Hardware|`$env:CTR_TARGET="Hardware"; python robot.py`|`CTR_TARGET=Hardware python robot.py`|Not supported|
+
+## Other Examples
+Most of the examples available on our [Phoenix 6 Examples](https://github.com/CrossTheRoadElec/Phoenix6-Examples) repo are applicable for non-FRC as well.

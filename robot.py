@@ -3,15 +3,17 @@ import keyboard
 import time
 
 if __name__ == "__main__":
-    # Create an FX object
+    # Use Talon FX ID 1 on the first available CAN interface
     fx = hardware.TalonFX(1, "*")
 
     # Factory-default it by applying an empty configuration
     fx.configurator.apply(configs.TalonFXConfiguration())
+    # Change this to true to enable the robot. Otherwise press the "e" key to set this to true
     is_enabled = False
 
     while True:
-        # Feed enable if we're enabled
+        # Feed the enable if we want to be enabled
+        # https://v6.docs.ctr-electronics.com/en/stable/docs/api-reference/api-usage/enabling-actuators.html#non-frc-applications
         if is_enabled:
             unmanaged.feed_enable(0.1)
 
