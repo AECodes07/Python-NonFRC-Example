@@ -4,7 +4,7 @@ import time
 
 if __name__ == "__main__":
     # Use Talon FX ID 1 on the first available CAN interface
-    fx = hardware.TalonFX(1, "*")
+    fx = hardware.TalonFX(1, "can0")
 
     # Factory-default it by applying an empty configuration
     fx.configurator.apply(configs.TalonFXConfiguration())
